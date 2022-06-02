@@ -27,7 +27,7 @@ def duzenle():
         if os.path.isdir(os.path.join(anadizin,uzanti)):
             continue
         else:
-            os.mkdir(os.path.join(anadizin,uzanti),mode=777) #mode=777 her durumda çalıştır demek
+            os.mkdir(os.path.join(anadizin,uzanti),mode=777) #mode=777 her durumda çalıştır demek 
     for dosya in dosyalar: 
         uzanti=os.path.splitext(dosya)[-1] #ensonuncu elemanı bizim dosyanın uzantısı
         os.rename(os.path.join(anadizin,dosya),os.path.join(anadizin,uzanti,dosya))
